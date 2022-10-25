@@ -2,7 +2,7 @@
 A web3 voting app built with `Solidity` and `web3js`
 
 ## Getting started
-- Clone the repo: `git clone`
+- Clone the repo: `git clone https://github.com/afanimartin/web3_voting_app.git`
 - Install `truffle` globally: `npm i truffle -g`
 - Install all `npm packages` in `package.json` file: `npm i`
 - Install Ganache from [here](https://trufflesuite.com/ganache/)
