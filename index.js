@@ -17,10 +17,12 @@ candidates = {
 function voteForCandidate() {
   candidateName = $("#candidate").val();
 
+  accountNumber = $("#account-number").val();
+
   contract.methods
     .voteForCandidate(web3.utils.asciiToHex(candidateName))
     .send({
-      from: "0x301223d01889174617B2B46392e0aFdCB5797E67",
+      from: accountNumber,
       gas: 1500000,
     })
     .then((f) => {

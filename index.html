@@ -12,35 +12,68 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body class="container">
-    <h1>Web3 Voting Application</h1>
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Candidate</th>
-            <th>Votes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Sahil</td>
-            <td id="candidate-1"></td>
-          </tr>
-          <tr>
-            <td>Agnes</td>
-            <td id="candidate-2"></td>
-          </tr>
-          <tr>
-            <td>Allan</td>
-            <td id="candidate-3"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <input type="text" id="candidate" />
-    <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+    <section class="main-body">
+      <img src="./web3.png" width="150" alt="">
+      <h3>A secure web3 voting app</h3>
+      <br>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Candidate</th>
+              <th>Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sahil</td>
+              <td id="candidate-1"></td>
+            </tr>
+            <tr>
+              <td>Agnes</td>
+              <td id="candidate-2"></td>
+            </tr>
+            <tr>
+              <td>Allan</td>
+              <td id="candidate-3"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          name="account"
+          class="form-control"
+          id="account-number"
+          required
+          placeholder="Enter account number"
+        />
+      </div>
+      <br>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="candidate"
+          required
+          placeholder="Enter name of candidate"
+        />
+      </div>
+      <br>
+      <button type="button" onclick="voteForCandidate()" class="btn btn-primary">Vote</button>
+    </section>
   </body>
   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
